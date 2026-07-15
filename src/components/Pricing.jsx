@@ -39,7 +39,7 @@ export default function Pricing() {
   return (
     <section
       id="pricing"
-      className="border border-[#E5E7EB] bg-gradient-to-b from-[#EFF6FF] to-white px-6 py-20"
+      className="bg-gradient-to-b from-[#EFF6FF] to-white px-6 py-20"
     >
       <div className="mx-auto max-w-7xl">
         <div className="mx-auto max-w-xl text-center">
@@ -51,7 +51,7 @@ export default function Pricing() {
           </p>
         </div>
 
-        <div className="mt-12 grid gap-8 border border-[#E5E7EB] bg-transparent md:grid-cols-3">
+        <div className="mt-12 grid gap-8 md:grid-cols-3">
           {plans.map((plan) => (
             <div
               key={plan.name}

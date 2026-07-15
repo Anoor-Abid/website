@@ -55,12 +55,12 @@ const services = [
 export default function Services() {
   return (
     <section id="services" className="bg-white px-6 py-20">
-      <div className="mx-auto max-w-7xl border border-[#E5E7EB] bg-transparent">
+      <div className="mx-auto max-w-7xl">
         <div className="mx-auto max-w-xl text-center">
           <h2 className="text-[48px] font-bold leading-[48px] text-[#111827]">Our Services</h2>
           <p className="mt-3 text-[20px] font-normal leading-[28px] text-[#4B5563]">Comprehensive automotive and electrical solutions for your vehicle</p>
         </div>
-        <div className="mt-12 grid gap-6 border border-[#E5E7EB] bg-transparent md:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {services.map(({ icon: Icon, title, description }) => (
             <Card
               key={title}
