@@ -12,11 +12,11 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="bg-gradient-to-b from-slate-50 to-white px-6 py-16 md:py-24"
+      className="border border-[#E5E7EB] bg-gradient-to-b from-[#EFF6FF] via-white to-[#EFF6FF] px-6 py-16 md:py-24"
     >
       <div className="mx-auto grid max-w-7xl items-center gap-12 md:grid-cols-2">
         <div>
-          <h1 className="text-4xl font-extrabold leading-tight text-slate-900 md:text-5xl">
+          <h1 className="max-w-[592px] text-[60px] font-bold leading-[60px] tracking-normal text-[#111827]">
             Professional Electrical &amp; Automotive Services in Your City
           </h1>
           <p className="mt-5 max-w-md text-slate-500">
@@ -41,7 +41,7 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="overflow-hidden rounded-2xl bg-slate-900 shadow-xl">
+        <div className="aspect-[1280/720] w-full overflow-hidden rounded-2xl border border-[#E5E7EB] bg-transparent">
           <img
             src={heroImg}
             alt="Black BMW M4 performance car"

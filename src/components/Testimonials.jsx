@@ -29,7 +29,7 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section id="testimonials" className="bg-white px-6 py-20">
+    <section id="testimonials" className="border border-[#E5E7EB] bg-white px-6 py-20">
       <div className="mx-auto max-w-7xl">
         <div className="mx-auto max-w-xl text-center">
           <h2 className="text-3xl font-extrabold text-slate-900 md:text-4xl">
@@ -40,21 +40,21 @@ export default function Testimonials() {
           </p>
         </div>
 
-        <div className="mt-12 grid gap-6 md:grid-cols-3">
+        <div className="mt-12 grid gap-6 border border-[#E5E7EB] bg-transparent md:grid-cols-3">
           {testimonials.map(({ quote, name, role, avatar }) => (
             <div
               key={name}
-              className="rounded-2xl border border-slate-100 bg-slate-50/60 p-6 text-center"
+              className="rounded-[16px] border border-[#E5E7EB] bg-gradient-to-b from-[#EFF6FF] to-white p-6 text-center"
             >
               <span className="mx-auto mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-blue-600">
                 <Quote className="h-4 w-4 text-white" fill="white" />
               </span>
-              <p className="text-sm text-slate-600">"{quote}"</p>
+              <p className="text-[16px] leading-[24px] text-[#374151]">"{quote}"</p>
               <div className="mt-5 flex items-center justify-center gap-3">
                 <img
                   src={avatar}
                   alt={name}
-                  className="h-10 w-10 rounded-full object-cover"
+                  className="h-12 w-12 rounded-full border border-[#E5E7EB] object-cover"
                 />
                 <div className="text-left">
                   <p className="text-sm font-bold text-slate-900">{name}</p>

@@ -55,19 +55,26 @@ const services = [
 export default function Services() {
   return (
     <section id="services" className="bg-white px-6 py-20">
-      <div className="mx-auto max-w-7xl">
+      <div className="mx-auto max-w-7xl border border-[#E5E7EB] bg-transparent">
         <div className="mx-auto max-w-xl text-center">
-          <h2 className="text-3xl font-extrabold text-slate-900 md:text-4xl">Our Services</h2>
-          <p className="mt-3 text-slate-500">Comprehensive automotive and electrical solutions for your vehicle</p>
+          <h2 className="text-[48px] font-bold leading-[48px] text-[#111827]">Our Services</h2>
+          <p className="mt-3 text-[20px] font-normal leading-[28px] text-[#4B5563]">Comprehensive automotive and electrical solutions for your vehicle</p>
         </div>
-        <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-12 grid gap-6 border border-[#E5E7EB] bg-transparent md:grid-cols-2 lg:grid-cols-3">
           {services.map(({ icon: Icon, title, description }) => (
-            <Card key={title} className="border-slate-100 bg-slate-50/60 transition-shadow hover:shadow-md">
+            <Card
+              key={title}
+              className="rounded-[16px] border border-[#E5E7EB] bg-gradient-to-b from-[#EFF6FF] to-white shadow-[0_10px_15px_0_rgba(0,0,0,0.1),0_4px_6px_0_rgba(0,0,0,0.1)]"
+            >
               <CardContent className="p-6">
-                <span className="mb-4 flex h-11 w-11 items-center justify-center rounded-lg bg-blue-600"><Icon className="h-5 w-5 text-white" /></span>
-                <h3 className="text-lg font-bold text-slate-900">{title}</h3>
-                <p className="mt-2 text-sm text-slate-500">{description}</p>
-                <a href="#services" className="mt-4 inline-block text-sm font-semibold text-blue-600 hover:underline">Learn More &rarr;</a>
+                <span className="mb-4 flex h-16 w-16 items-center justify-center rounded-[12px] border border-[#E5E7EB] bg-[#007BFF]">
+                  <Icon className="h-6 w-6 text-white" />
+                </span>
+                <h3 className="text-[24px] font-bold leading-[32px] text-slate-900">{title}</h3>
+                <p className="mt-2 text-[16px] font-normal leading-[24px] text-slate-500">{description}</p>
+                <a href="#services" className="mt-4 inline-block text-sm font-semibold text-blue-600 hover:underline">
+                  Learn More &rarr;
+                </a>
               </CardContent>
             </Card>
           ))}

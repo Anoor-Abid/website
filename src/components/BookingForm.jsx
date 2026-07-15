@@ -1,12 +1,11 @@
-
 import { MapPin, Phone } from "lucide-react";
 
 export default function ContactInfo() {
   return (
-    <section id="contact" className="bg-slate-50 px-6 py-20">
+    <section id="contact" className="border border-[#E5E7EB] bg-gradient-to-b from-[#EFF6FF] to-white px-6 py-20">
       <div className="mx-auto max-w-7xl">
-        <div>
-          <h2 className="text-3xl font-extrabold text-slate-900 md:text-4xl">
+        <div className="border border-[#E5E7EB] bg-transparent">
+          <h2 className="text-[48px] font-bold leading-[48px] text-[#111827]">
             Book Your Service Now
           </h2>
           <p className="mt-3 max-w-md text-slate-500">
