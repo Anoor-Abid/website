@@ -71,7 +71,7 @@ export default function Services() {
                   <Icon className="h-6 w-6 text-white" />
                 </span>
                 <h3 className="text-[24px] font-bold leading-[32px] text-slate-900">{title}</h3>
-                <p className="mt-2 text-[16px] font-normal leading-[24px] text-slate-500">{description}</p>
+                <p className="mt-2 text-[16px] font-normal leading-[24px] text-[#4B5563]">{description}</p>
                 <a href="#services" className="mt-4 inline-block text-sm font-semibold text-blue-600 hover:underline">
                   Learn More &rarr;
                 </a>

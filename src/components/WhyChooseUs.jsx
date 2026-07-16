@@ -41,10 +41,10 @@ export default function WhyChooseUs() {
         </div>
 
         <div>
-          <h2 className="text-3xl font-extrabold text-slate-900 md:text-4xl">
+          <h2 className="text-[48px] font-bold leading-[48px] text-[#111827]">
             Why Choose Us
           </h2>
-          <p className="mt-4 text-slate-500">
+          <p className="mt-4 text-[20px] font-normal leading-[28px] text-[#4B5563]">
             We're committed to providing exceptional automotive and electrical
             services with unmatched expertise and customer care.
           </p>

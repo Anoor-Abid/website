@@ -62,7 +62,7 @@ export default function Pricing() {
               }`}
             >
               {plan.badge && (
-                <span className="absolute right-6 top-6 flex h-5 w-[152px] items-center justify-center rounded-full bg-yellow-400 text-center text-[14px] font-semibold leading-[100%] tracking-normal text-[#111827]">
+                <span className="absolute right-0 top-0 flex h-[29px] w-[152px] items-center justify-center rounded-tl-none rounded-tr-[16px] rounded-br-none rounded-bl-[8px] border border-[#E5E7EB] bg-[#FACC15] text-center text-[14px] font-semibold leading-[100%] tracking-normal text-[#111827]">
                   {plan.badge}
                 </span>
               )}
